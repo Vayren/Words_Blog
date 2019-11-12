@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%; }
+
+html, body {
+  height: 100%; }
+
+header {
+  height: 100%;
+  position: relative; }
+  header .logo {
+    position: absolute;
+    top: 30px;
+    left: 380px;
+    color: silver; }
+    header .logo li {
+      font-size: 0.77rem;
+      font-family: Arial;
+      letter-spacing: 0.12rem;
+      margin-bottom: 7px;
+      text-transform: uppercase; }
+    header .logo .words {
+      color: white;
+      font-size: 1.5rem;
+      font-family: none;
+      font-weight: bold; }
+  header .shares {
+    position: absolute;
+    top: 40px;
+    right: 380px; }
+    header .shares a {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: black;
+      margin-right: 15px; }
+  header .slides {
+    height: 100%; }
+    header .slides ul {
+      height: 100%; }
+    header .slides .first {
+      height: 100%;
+      width: 65%;
+      background: url("../img/slide_1.jpg") no-repeat;
+      background-position: -18em 0em;
+      background-size: cover; }
+  header .posts {
+    width: 38%;
+    position: absolute;
+    top: 20%;
+    left: 33%; }
+    header .posts .post {
+      padding: 6.5em 6em;
+      color: white;
+      background-color: rgba(75, 142, 198, 0.9); }
+      header .posts .post span {
+        font-family: Arial;
+        font-size: 0.7rem;
+        display: block;
+        margin-bottom: 25px;
+        letter-spacing: 0.22rem; }
+      header .posts .post h2 {
+        font-size: 4.5rem;
+        margin-bottom: 30px; }
+      header .posts .post p {
+        font-size: 1.1rem;
+        letter-spacing: 0.04rem;
+        line-height: 1.6;
+        font-family: Arial; }
