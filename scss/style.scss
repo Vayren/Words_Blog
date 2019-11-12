@@ -17,6 +17,7 @@ header{
 	height: 100%;
 	position: relative;
 	.logo{
+		z-index: 4;
 		position: absolute;
 		top:3%;
 		left:20%;
@@ -36,6 +37,7 @@ header{
 		}
 	}
 	.shares{
+		z-index: 4;
 		position: absolute;
 		top:4%;
 		right:20%;
@@ -55,30 +57,36 @@ header{
 		.slide{
 			height: 100%;
 			width:65%;
-			display: none;
+			opacity: 0;
+			position: absolute;
 		}
 		.visible{
-			display: block;
+			opacity: 1;
+			transition: 1s;
 		}
 		.first{
+			z-index: 3;
 			background: url('../img/slide_1.jpg') -18em 0em no-repeat;
 			background-size: cover;
 		}
 		.second{
-			background: url('../img/slide_2.jpg') no-repeat;
+			z-index: 2;
+			background: url('../img/slide_2.jpg') -6em 0em no-repeat;
 		}
 		.third{
-			background: url('../img/slide_3.jpg') no-repeat;
+			z-index: 1;
+			background: url('../img/slide_3.jpg') -6em 0em no-repeat;
 		}
 		
 	}
 	.posts{
-		width:770px;
-		position:absolute;
-		top:20%;
-		left:33%;
 		.post{
-			display: none;
+			z-index: 4;
+			width:770px;
+			position: absolute;
+			left:33%;
+			top:50%;
+			opacity: 0;
 			padding:6.5em 6em;
 			color:white;
 			background-color: rgba(75, 142, 198, 0.9);
@@ -101,10 +109,13 @@ header{
 			}
 		}
 		.visible{
-			display:block;
+			opacity: 1;
+			top:20%;
+			transition: 1.2s;
 		}
 	}
 	.dots{
+		z-index: 4;
 		position: absolute;
 		cursor: pointer;
 		bottom: 1.5%;
@@ -119,6 +130,7 @@ header{
 		}
 		.active{
 			background-color: rgba(255, 255, 255, 0.7);
+			transition: 1s;
 		}
 	}
 

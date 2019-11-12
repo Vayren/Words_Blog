@@ -54,6 +54,7 @@ header {
   height: 100%;
   position: relative; }
   header .logo {
+    z-index: 4;
     position: absolute;
     top: 3%;
     left: 20%;
@@ -70,6 +71,7 @@ header {
       font-family: none;
       font-weight: bold; }
   header .shares {
+    z-index: 4;
     position: absolute;
     top: 4%;
     right: 20%; }
@@ -85,43 +87,51 @@ header {
     header .slides .slide {
       height: 100%;
       width: 65%;
-      display: none; }
+      opacity: 0;
+      position: absolute; }
     header .slides .visible {
-      display: block; }
+      opacity: 1;
+      transition: 1s; }
     header .slides .first {
+      z-index: 3;
       background: url("../img/slide_1.jpg") -18em 0em no-repeat;
       background-size: cover; }
     header .slides .second {
-      background: url("../img/slide_2.jpg") no-repeat; }
+      z-index: 2;
+      background: url("../img/slide_2.jpg") -6em 0em no-repeat; }
     header .slides .third {
-      background: url("../img/slide_3.jpg") no-repeat; }
-  header .posts {
+      z-index: 1;
+      background: url("../img/slide_3.jpg") -6em 0em no-repeat; }
+  header .posts .post {
+    z-index: 4;
     width: 770px;
     position: absolute;
+    left: 33%;
+    top: 50%;
+    opacity: 0;
+    padding: 6.5em 6em;
+    color: white;
+    background-color: rgba(75, 142, 198, 0.9); }
+    header .posts .post span {
+      font-family: Arial;
+      font-size: 0.7rem;
+      display: block;
+      margin-bottom: 25px;
+      letter-spacing: 0.22rem; }
+    header .posts .post h2 {
+      font-size: 4.5rem;
+      margin-bottom: 30px; }
+    header .posts .post p {
+      font-size: 1.1rem;
+      letter-spacing: 0.04rem;
+      line-height: 1.6;
+      font-family: Arial; }
+  header .posts .visible {
+    opacity: 1;
     top: 20%;
-    left: 33%; }
-    header .posts .post {
-      display: none;
-      padding: 6.5em 6em;
-      color: white;
-      background-color: rgba(75, 142, 198, 0.9); }
-      header .posts .post span {
-        font-family: Arial;
-        font-size: 0.7rem;
-        display: block;
-        margin-bottom: 25px;
-        letter-spacing: 0.22rem; }
-      header .posts .post h2 {
-        font-size: 4.5rem;
-        margin-bottom: 30px; }
-      header .posts .post p {
-        font-size: 1.1rem;
-        letter-spacing: 0.04rem;
-        line-height: 1.6;
-        font-family: Arial; }
-    header .posts .visible {
-      display: block; }
+    transition: 1.2s; }
   header .dots {
+    z-index: 4;
     position: absolute;
     cursor: pointer;
     bottom: 1.5%;
@@ -134,4 +144,5 @@ header {
       background-color: rgba(134, 136, 138, 0.4);
       border-radius: 50%; }
     header .dots .active {
-      background-color: rgba(255, 255, 255, 0.7); }
+      background-color: rgba(255, 255, 255, 0.7);
+      transition: 1s; }
