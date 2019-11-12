@@ -55,8 +55,8 @@ header {
   position: relative; }
   header .logo {
     position: absolute;
-    top: 30px;
-    left: 380px;
+    top: 3%;
+    left: 20%;
     color: silver; }
     header .logo li {
       font-size: 0.77rem;
@@ -71,8 +71,8 @@ header {
       font-weight: bold; }
   header .shares {
     position: absolute;
-    top: 40px;
-    right: 380px; }
+    top: 4%;
+    right: 20%; }
     header .shares a {
       font-size: 1.2rem;
       text-decoration: none;
@@ -82,18 +82,26 @@ header {
     height: 100%; }
     header .slides ul {
       height: 100%; }
-    header .slides .first {
+    header .slides .slide {
       height: 100%;
       width: 65%;
-      background: url("../img/slide_1.jpg") no-repeat;
-      background-position: -18em 0em;
+      display: none; }
+    header .slides .visible {
+      display: block; }
+    header .slides .first {
+      background: url("../img/slide_1.jpg") -18em 0em no-repeat;
       background-size: cover; }
+    header .slides .second {
+      background: url("../img/slide_2.jpg") no-repeat; }
+    header .slides .third {
+      background: url("../img/slide_3.jpg") no-repeat; }
   header .posts {
-    width: 38%;
+    width: 770px;
     position: absolute;
     top: 20%;
     left: 33%; }
     header .posts .post {
+      display: none;
       padding: 6.5em 6em;
       color: white;
       background-color: rgba(75, 142, 198, 0.9); }
@@ -111,3 +119,19 @@ header {
         letter-spacing: 0.04rem;
         line-height: 1.6;
         font-family: Arial; }
+    header .posts .visible {
+      display: block; }
+  header .dots {
+    position: absolute;
+    cursor: pointer;
+    bottom: 1.5%;
+    left: 30%; }
+    header .dots .dot {
+      margin-right: 5px;
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      background-color: rgba(134, 136, 138, 0.4);
+      border-radius: 50%; }
+    header .dots .active {
+      background-color: rgba(255, 255, 255, 0.7); }
