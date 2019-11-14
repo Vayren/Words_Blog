@@ -48,10 +48,6 @@ function switchSlide(n) {
 	slides[n].classList.add('visible');
 	posts[n].classList.add('visible');
 }
-	
-let time = 4000;
-let timer = setInterval(slider, time);
-
 
 function dotClick() {
 	let dotsBlock = document.querySelector('.dots');
@@ -76,6 +72,9 @@ function dotClick() {
 		}
 	}
 }
+
+let time = 4000;
+let timer = setInterval(slider, time);
 
 dotClick();
 
