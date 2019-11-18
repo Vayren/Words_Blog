@@ -50,6 +50,11 @@ html {
 html, body {
   height: 100%; }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
 header {
   height: 100%;
   position: relative; }
@@ -148,9 +153,9 @@ header {
       transition: 1s; }
 
 .block_1 {
-  height: 100%; }
+  height: 100%;
+  padding-top: 11em; }
   .block_1 .header {
-    padding-top: 6.5em;
     text-align: center; }
     .block_1 .header a {
       text-decoration: none;
@@ -195,8 +200,8 @@ header {
         font-family: Arial; }
 
 .block_2 {
-  padding-top: 8.5em;
-  padding-bottom: 8.5em; }
+  padding-top: 10em;
+  padding-bottom: 10em; }
   .block_2 .header {
     text-align: center; }
     .block_2 .header a {
@@ -243,3 +248,55 @@ header {
         text-decoration: none;
         color: black;
         margin-left: 20px; }
+
+.block_3 {
+  background-color: #f2f2f2;
+  padding-bottom: 10em;
+  padding-top: 9.5em; }
+  .block_3 .header {
+    text-align: center; }
+    .block_3 .header a {
+      text-decoration: none;
+      color: rgba(75, 142, 198, 0.9); }
+    .block_3 .header h2 {
+      font-size: 2.8rem;
+      margin-bottom: 40px; }
+    .block_3 .header p {
+      margin: 0 auto;
+      width: 750px;
+      line-height: 1.7;
+      font-size: 1.07rem;
+      letter-spacing: 0.05rem;
+      font-family: Arial; }
+  .block_3 .posts {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 5em; }
+    .block_3 .posts .post {
+      float: left;
+      background-color: white;
+      width: 350px;
+      margin: 0 15px; }
+      .block_3 .posts .post img {
+        width: 350px; }
+      .block_3 .posts .post a {
+        text-decoration: none;
+        color: black; }
+    .block_3 .posts .descr {
+      padding: 35px 30px; }
+      .block_3 .posts .descr .comments {
+        float: right; }
+        .block_3 .posts .descr .comments i {
+          padding-left: 10px; }
+      .block_3 .posts .descr .date-of-publish {
+        margin-bottom: 35px;
+        font-family: Arial;
+        font-size: 0.75rem;
+        letter-spacing: 0.2rem; }
+      .block_3 .posts .descr h2 {
+        font-size: 2rem;
+        margin-bottom: 35px; }
+      .block_3 .posts .descr p {
+        font-size: 1.2rem;
+        font-family: Arial;
+        line-height: 1.6; }

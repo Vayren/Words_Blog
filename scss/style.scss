@@ -16,6 +16,12 @@ html, body{
 //TO DO
 // block_1 header mixin or %
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 header{
 	height: 100%;
 	position: relative;
@@ -140,8 +146,8 @@ header{
 
 .block_1{
 	height:100%;
+	padding-top: 11em ;
 	.header{
-		padding-top: 6.5em ;
 		text-align: center;
 		a{
 			text-decoration: none;
@@ -197,8 +203,8 @@ header{
 }
 
 .block_2{
-	padding-top: 8.5em ;
-	padding-bottom: 8.5em;
+	padding-top: 10em;
+	padding-bottom: 10em;
 	.header{
 		text-align: center;
 		a{
@@ -258,6 +264,73 @@ header{
 			}
 		}
 	}
+}
 
+.block_3{
+	background-color:#f2f2f2;
+	padding-bottom: 10em;
+	padding-top:9.5em;
+	.header{
+		text-align: center;
+		a{
+			text-decoration: none;
+			color:$post_color;
+		}
+		h2{
+			font-size: 2.8rem;
+			margin-bottom: 40px;
+		}
+		p{
+			margin: 0 auto;
+			width:750px;
+			line-height: 1.7;
+			font-size: 1.07rem;
+			letter-spacing: 0.05rem;
+			font-family:Arial;
+		}
+	}
+	.posts{
+		max-width: 1140px;
+		margin:0 auto;
+		margin-top: 5em;
+
+		.post{
+			float: left;
+			background-color:white;
+			width:350px;
+			margin:0 15px;
+			img{
+				width:350px;
+			}
+			a{
+				text-decoration: none;
+				color:black;
+			}
+		}
+		.descr{
+			padding:35px 30px;
+			.comments{
+				float:right;
+				i{
+					padding-left: 10px;
+				}
+			}
+			.date-of-publish{
+				margin-bottom: 35px;
+				font-family:Arial;
+				font-size: 0.75rem;
+				letter-spacing: 0.2rem;
+			}
+			h2{
+				font-size: 2rem;
+				margin-bottom: 35px;
+			}
+			p{
+				font-size: 1.2rem;
+				font-family:Arial;
+				line-height: 1.6;
+			}
+		}
+	}
 }
 
