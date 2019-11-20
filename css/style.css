@@ -174,11 +174,10 @@ header {
       overflow: hidden;
       width: 920px;
       height: 680px;
-      margin-right: 20px; }
-      .block_1 .container_1 .background img {
-        width: 1050px;
-        height: 680px;
-        margin-left: -70px; }
+      margin-right: 20px;
+      background: url("../img/featured-1.jpg") no-repeat;
+      background-size: 120%;
+      background-position: 50% 0; }
     .block_1 .container_1 .post {
       position: absolute;
       text-align: right;
@@ -256,7 +255,7 @@ header {
 .block_3 {
   background-color: #f2f2f2;
   padding-bottom: 10em;
-  padding-top: 9.5em; }
+  padding-top: 10em; }
   .block_3 .header {
     text-align: center; }
     .block_3 .header a {

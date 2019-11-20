@@ -171,11 +171,9 @@ header{
 			width:920px;
 			height:680px;
 			margin-right: 20px;
-			img{
-				width:1050px;
-				height:680px;
-				margin-left: -70px;
-			}
+			background: url('../img/featured-1.jpg') no-repeat;
+			background-size: 120%;
+			background-position: 50% 0;
 		}
 		.post{
 			position: absolute;
@@ -274,7 +272,7 @@ header{
 .block_3{
 	background-color:#f2f2f2;
 	padding-bottom: 10em;
-	padding-top:9.5em;
+	padding-top:10em;
 	.header{
 		text-align: center;
 		a{
@@ -338,4 +336,5 @@ header{
 		}
 	}
 }
+
 
