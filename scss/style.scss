@@ -22,6 +22,22 @@ html, body{
   display: table;
 }
 
+.hover_block{
+	height: 400px;
+	display: flex;
+	font-size: 0.7rem;
+	letter-spacing: 0.2rem;
+  	align-items: center;
+  	justify-content: center;
+  	background-color: rgba(0, 0, 0, 0);
+  	color:rgba(255, 255, 255, 0);
+  	transition: 0.4s all;
+  	&:hover{
+  		background-color: rgba(0, 0, 0, 0.5);
+  		color:rgba(255, 255, 255, 1);
+  	}
+  }
+
 header{
 	height: 100%;
 	position: relative;
@@ -337,4 +353,68 @@ header{
 	}
 }
 
+.block_4{
+	padding:10em 0;
+	.header{
+		text-align: center;
+		a{
+			text-decoration: none;
+			color:$post_color;
+		}
+		h2{
+			font-size: 2.8rem;
+			margin-bottom: 40px;
+		}
+		p{
+			margin: 0 auto;
+			width:750px;
+			line-height: 1.7;
+			font-size: 1.07rem;
+			letter-spacing: 0.05rem;
+			font-family:Arial;
+		}
+	}
+	.galery{
+		width: 1150px;
+		margin:0 auto;
+		margin-top: 90px;
+		a{
+			display: block;
+		}
+		.container{
+			text-transform: uppercase;
+			font-family: Arial;
+			display: flex;
+			height:400px;
+			&:last-child{
+				margin-top: 30px;
+			}
+		}
+		.ph_1{
+			width:365px;
+			background:url('../img/img-1.jpg') 50% 0 no-repeat;
+			background-size:cover;
+
+		}
+		.ph_2{
+			width:755px;
+			margin-left: auto;
+			background:url('../img/img-2.jpg') 100% no-repeat;
+			position: relative;
+		}
+		.ph_3{
+			width:675px;
+			background:url('../img/img-3.jpg') 100%  no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		.ph_4{
+			width:445px;
+			margin-left: auto;
+			background:url('../img/img-4.jpg') 50% 0 no-repeat;
+			background-size: 140%;
+			position: relative;
+		}
+	}
+}
 
