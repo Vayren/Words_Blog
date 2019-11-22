@@ -73,10 +73,26 @@ function dotClick() {
 	}
 }
 
+function counterAnimation(){
+	let flag = true;
+	let timer = document.querySelectorAll('.timer')[0];
+	let height = document.documentElement.clientHeight;
+
+	$(window).on('scroll load', function(){
+		let coords = timer.getBoundingClientRect();
+    	if(flag && coords.top < height && coords.top > 0){
+    		flag = false;
+    		$('.timer').countTo();
+    	}
+	});
+}
+
+
 let time = 4000;
 let timer = setInterval(slider, time);
 
 dotClick();
+counterAnimation();
 
 
 

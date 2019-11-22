@@ -48,7 +48,12 @@ html {
   font-size: 100%; }
 
 html, body {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
+
+body {
+  background: url("../img/slide_1.jpg") fixed no-repeat;
+  background-size: cover; }
 
 .clearfix::after {
   content: "";
@@ -70,6 +75,7 @@ html, body {
     color: white; }
 
 header {
+  background-color: white;
   height: 100%;
   position: relative; }
   header .logo {
@@ -167,6 +173,7 @@ header {
       transition: 1s; }
 
 .block_1 {
+  background-color: white;
   padding-top: 8em; }
   .block_1 .header {
     text-align: center; }
@@ -217,6 +224,7 @@ header {
         font-family: Arial; }
 
 .block_2 {
+  background-color: white;
   padding-top: 10em;
   padding-bottom: 10em; }
   .block_2 .header {
@@ -319,6 +327,7 @@ header {
         line-height: 1.6; }
 
 .block_4 {
+  background-color: white;
   padding: 10em 0; }
   .block_4 .header {
     text-align: center; }
@@ -368,3 +377,24 @@ header {
       background: url("../img/img-4.jpg") 50% 0 no-repeat;
       background-size: 140%;
       position: relative; }
+
+.block_5 {
+  color: white;
+  font-family: Arial; }
+  .block_5 span {
+    display: block; }
+    .block_5 span:first-child {
+      margin-bottom: 50px;
+      font-size: 3.7rem;
+      font-weight: bold; }
+    .block_5 span:last-child {
+      letter-spacing: 0.2rem;
+      font-size: 0.8rem; }
+  .block_5 .container {
+    padding: 5.4em 0;
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+  .block_5 .stat {
+    text-align: center; }

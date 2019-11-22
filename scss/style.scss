@@ -11,10 +11,17 @@ html{
 
 html, body{
 	height:100%;
+	width:100%;
 }
 
 //TO DO
 // block_1 header mixin or %
+
+body{
+	background:url('../img/slide_1.jpg') fixed no-repeat;
+	background-size: cover;
+
+}
 
 .clearfix::after {
   content: "";
@@ -39,6 +46,7 @@ html, body{
   }
 
 header{
+	background-color: white;
 	height: 100%;
 	position: relative;
 	.logo{
@@ -161,6 +169,7 @@ header{
 }
 
 .block_1{
+	background-color: white;
 	padding-top: 8em;
 	.header{
 		text-align: center;
@@ -222,6 +231,7 @@ header{
 }
 
 .block_2{
+	background-color: white;
 	padding-top: 10em;
 	padding-bottom: 10em;
 	.header{
@@ -354,6 +364,7 @@ header{
 }
 
 .block_4{
+	background-color: white;
 	padding:10em 0;
 	.header{
 		text-align: center;
@@ -418,3 +429,31 @@ header{
 	}
 }
 
+.block_5{
+	color:white;
+	font-family: Arial;
+	span{
+		display: block;
+		&:first-child{
+			margin-bottom: 50px;
+			font-size:3.7rem;
+			font-weight: bold;
+		}
+		&:last-child{
+			letter-spacing: 0.2rem;
+			font-size:0.8rem;
+		}
+	}
+	.container{
+		padding:5.4em 0;
+		max-width:1420px;
+		margin:0 auto;
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	.stat{
+		text-align: center;
+	}
+}
